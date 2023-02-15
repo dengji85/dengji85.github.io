@@ -5,13 +5,17 @@
   
 
   
-  <title>Archives: 2023 | Hexo</title>
+  <title>全角数字导致sql统计异常 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2023/index.html">
+  <meta name="description" content="今天同事发我一段sql,sum求和一直报错是非数字，第一感觉就是有非数字型的文本，把数据分组后排序，把结果复制到excel中也没发现非数字，excel可以正常求和；后面调试好久才找到一条数据，而且数字和其他数字不一样结论就是找到’２‘，一个全局的2；由于数据库字段是varchar，且没有做输入验证，才导致这种问题，肉眼很难去找出这种数据；特此记录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="全角数字导致sql统计异常">
+<meta property="og:url" content="http://example.com/2023/02/15/%E5%85%A8%E8%A7%92%E6%95%B0%E5%AD%97%E5%AF%BC%E8%87%B4sql%E7%BB%9F%E8%AE%A1%E5%BC%82%E5%B8%B8/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="今天同事发我一段sql,sum求和一直报错是非数字，第一感觉就是有非数字型的文本，把数据分组后排序，把结果复制到excel中也没发现非数字，excel可以正常求和；后面调试好久才找到一条数据，而且数字和其他数字不一样结论就是找到’２‘，一个全局的2；由于数据库字段是varchar，且没有做输入验证，才导致这种问题，肉眼很难去找出这种数据；特此记录">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-02-15T09:13:24.000Z">
+<meta property="article:modified_time" content="2023-02-15T09:23:49.468Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -62,59 +66,52 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/02/15/%E5%85%A8%E8%A7%92%E6%95%B0%E5%AD%97%E5%AF%BC%E8%87%B4sql%E7%BB%9F%E8%AE%A1%E5%BC%82%E5%B8%B8/" class="archive-article-date">
-  <time datetime="2023-02-15T09:13:24.000Z" itemprop="datePublished">Feb 15</time>
+        <section id="main"><article id="post-全角数字导致sql统计异常" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2023/02/15/%E5%85%A8%E8%A7%92%E6%95%B0%E5%AD%97%E5%AF%BC%E8%87%B4sql%E7%BB%9F%E8%AE%A1%E5%BC%82%E5%B8%B8/" class="article-date">
+  <time datetime="2023-02-15T09:13:24.000Z" itemprop="datePublished">2023-02-15</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/02/15/%E5%85%A8%E8%A7%92%E6%95%B0%E5%AD%97%E5%AF%BC%E8%87%B4sql%E7%BB%9F%E8%AE%A1%E5%BC%82%E5%B8%B8/">全角数字导致sql统计异常</a>
+    <h1 class="article-title" itemprop="name">
+      全角数字导致sql统计异常
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/02/15/hello-world/" class="archive-article-date">
-  <time datetime="2023-02-15T07:47:54.123Z" itemprop="datePublished">Feb 15</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/02/15/hello-world/">Hello World</a>
-    </h1>
-  
+        <p>今天同事发我一段sql,sum求和一直报错是非数字，第一感觉就是有非数字型的文本，把数据分组后排序，<br>把结果复制到excel中也没发现非数字，excel可以正常求和；后面调试好久才找到一条数据，而且数字和其他数字不一样<br>结论就是找到’２‘，一个全局的2；由于数据库字段是varchar，且没有做输入验证，才导致这种问题，肉眼很难去找出这种数据；<br>特此记录</p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/02/15/%E5%85%A8%E8%A7%92%E6%95%B0%E5%AD%97%E5%AF%BC%E8%87%B4sql%E7%BB%9F%E8%AE%A1%E5%BC%82%E5%B8%B8/" data-id="cle5gv0r40000a0t33jabdzc4" class="article-share-link">Share</a>
+      
+      
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2023/02/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         
